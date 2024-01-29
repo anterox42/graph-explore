@@ -3,7 +3,7 @@ import { transformData } from './helpers/transformData';
 import DynamicGraph from './DynamicGraph';
 import { filterData } from './helpers/filterData';
 
-export const SEMANTIC_PORTAL_API = 'http://semantic-portal.net/api';
+const SEMANTIC_PORTAL_API = 'http://semantic-portal.net/api';
 
 async function loadBranch(branch: string) {
   const res = await fetch(`${SEMANTIC_PORTAL_API}/branch/${branch}`);

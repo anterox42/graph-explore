@@ -2,9 +2,9 @@
 
 import { SemanticPortalNode } from '@/app/types/SemanticPortalNode';
 import { useEffect, useState } from 'react';
-import { SEMANTIC_PORTAL_API } from '../page';
 
 const SUPPORTED_THESIS_CLASSES = ['definition', 'essence'];
+const SEMANTIC_PORTAL_API = 'http://semantic-portal.net/api';
 
 const filterThesis = (data: SemanticPortalNode[]) =>
   data.filter((thesis: SemanticPortalNode) => SUPPORTED_THESIS_CLASSES.includes(thesis.class));
