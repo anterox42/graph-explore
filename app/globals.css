@@ -3,25 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 214, 219, 220;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --background-end-rgb: 214, 219, 220;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  background: #0E0417;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.focus-scale:focus {
+  transform: scale(1.1); /* Adjust the scale value as needed */
+  transition: transform 0.3s ease; /* Adjust the duration and easing as desired */
+}
+
+.card {
+  background-color: rgb(255, 255, 255, 0.85);
 }
